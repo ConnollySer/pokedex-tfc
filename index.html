@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pokedex-Web</title>
+    <link rel="icon" href="img/logos/pokedexLogo2.jpg">
+    <link rel="stylesheet" href="estiloPokedex.css">
+</head>
+<body>
+    <header>
+        <h1 id="titulo">Pokedex-Web</h1>
+    </header>
+    <main>
+        <div id="contenedorPrincipal">
+            <input id="buscador" placeholder="Intruduce un Pokémon" name="buscadorPoke">
+            <div id="contenedorImagen"></div>
+            <div id="conteInfobtn">
+                <div id="contenedorInfo">
+                    <p id="nombrePoke" class="infoPoke"></p>
+                    <p id="numeroPoke" class="infoPoke"></p>
+                    <p id="tipoPoke" class="infoPoke"></p>
+                    <p id="alturaPoke" class="infoPoke"></p>
+                    <p id="pesoPoke" class="infoPoke"></p>
+                    <p id="movimientosPoke" class="infoPoke"></p>
+                </div>
+                <div id="contenedorBotones">
+                    <button id="btnFilttar" onclick = "filtrarPokemon()">Filtrar</button>
+                    <button id="btnShiny" onclick = "buscarShiny()">Ver Shyiny</button>
+                    <button id="btnCombate" onclick="combatePokemon()">Combate Pokémon</button>
+                    <button id="btnSalir" onclick="salirPokedex()">Salir</button>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <p id="footer">Pokedex desarrollada por Sergio Connolly Peña &copy; 2025 Trabajo Final de Grado. Foc Formación</p>
+    </footer>
+    
+</body>
+</html>
